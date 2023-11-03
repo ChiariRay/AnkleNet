@@ -1,1 +1,3 @@
-# AnkleNet
+# AnkleNet: ankle-specific model for chronic ankle instability diagnosis
+
+Coming soon...
