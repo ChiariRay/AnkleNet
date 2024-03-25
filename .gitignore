@@ -1,3 +1,10 @@
+# My
+.vscode
+/test*
+checkpoints/
+wandb/
+image/CAM/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

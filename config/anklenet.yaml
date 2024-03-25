@@ -1,0 +1,32 @@
+task: cai-diagnosis
+desc: AnkleNet
+lr: 3.0e-5 # 5.0e-5, 1.0e-4
+wd: 1.0e-5 
+batch_size: 8 
+device: cuda:0
+plane: both 
+label: bilateral # [`lateral`, `medial`, `bilateral`]
+epoch: 5 # 30
+num_work: 12
+
+model:
+  backbone_name: resnet34
+  num_embeddings: 512 
+  dropout_rate: 0.1
+  prtrained: True
+  anklenet:
+    layer_num: 4
+    depth: 4
+    plane_patch_size: 1
+
+data:
+  devdata_path: data/df_dev.csv
+  testdata_path: data/df_test.csv
+  sample_list:
+    - label1
+    - label2
+  
+transform:
+  num_slices: 16
+  resize: 384 
+  img_size: 256 

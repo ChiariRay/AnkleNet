@@ -1,0 +1,2 @@
+ID,Side,AxialPath,CoronalPath,label1,label2
+0,2,../mr_data/axial/0004.nii.gz,../mr_data/coronal/0004.nii.gz,0,0
